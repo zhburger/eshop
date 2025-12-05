@@ -10,7 +10,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import path from "path";
-import { fileURLToPath } from "url";
+//import { fileURLToPath } from "url";
 import { readFileSync } from "fs";
 
 // 导入路由
@@ -28,9 +28,7 @@ import { connectDB } from "../../backend/lib/db.js";
 dotenv.config();
 
 // 获取当前文件目录
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
+const __dirname = new URL(".", import.meta.url).pathname;
 // 创建 Express 应用（不启动服务器）
 const app = express();
 
