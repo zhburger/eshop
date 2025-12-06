@@ -20,7 +20,7 @@ import cartRoutes from "../../backend/routes/cart.route.js";
 import couponRoutes from "../../backend/routes/coupon.route.js";
 import paymentRoutes from "../../backend/routes/payment.route.js";
 import analyticsRoutes from "../../backend/routes/analytics.route.js";
-
+import app from "../../backend/server.js";
 // 导入数据库连接
 import { connectDB } from "../../backend/lib/db.js";
 
@@ -30,7 +30,7 @@ dotenv.config();
 // 获取当前文件目录
 const __dirname = new URL(".", import.meta.url).pathname;
 // 创建 Express 应用（不启动服务器）
-const app = express();
+//const app = express();
 
 // 中间件配置
 app.use(express.json({ limit: "10mb" }));

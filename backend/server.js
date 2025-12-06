@@ -15,7 +15,8 @@ import { connectDB } from "./lib/db.js";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+//云函数不能手动绑定
+//const PORT = process.env.PORT || 5000;
 
 const __dirname = path.resolve();
 
@@ -41,3 +42,4 @@ if (process.env.NODE_ENV === "production") {
 	console.log("Server is running on http://localhost:" + PORT);
 	connectDB();
 });*/
+export default app;
