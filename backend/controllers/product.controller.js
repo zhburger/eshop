@@ -1,5 +1,6 @@
 import { redis } from "../lib/redis.js";
-import cloudinary from "../lib/cloudinary.js";
+//import cloudinary from "../lib/cloudinary.js";
+import { v2 as cloudinary } from "cloudinary";
 import Product from "../models/product.model.js";
 
 // 获取全部商品列表
