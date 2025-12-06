@@ -36,8 +36,8 @@ if (process.env.NODE_ENV === "production") {
 		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
 	});
 }
-
-app.listen(PORT, () => {
+//云函数不要.listen
+/*app.listen(PORT, () => {
 	console.log("Server is running on http://localhost:" + PORT);
 	connectDB();
-});
+});*/
