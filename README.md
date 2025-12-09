@@ -1,5 +1,9 @@
 # E-Commerce Store 项目说明
 
+## 学号：202330452341
+
+## 姓名：张瀚
+
 ## 部署地址
 
 -https://eshop-app.zeabur.app/
